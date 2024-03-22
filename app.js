@@ -9,7 +9,9 @@ app.get('/version', (_req, res) => {
   res.send('pebble')
 })
 
-app.get('/health', () => {})
+app.get('/health', (_req, res) => {
+  res.send('ok')
+})
 
 app.listen(PORT, () => {
   // eslint-disable-next-line no-console
